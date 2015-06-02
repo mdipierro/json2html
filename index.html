@@ -46,7 +46,7 @@
     <script src="js/json2html.js"></script>
     <script>
       jQuery(function(){ jQuery.getJSON('data.json',function(items) { 
-          json2html('.tree','.datatable',items); }); 
+         json2html(items,'.datatable','.tree'); }); 
       });
     </script>
   </body>

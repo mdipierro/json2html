@@ -1,7 +1,6 @@
-var json2html = function(tree_selector, table_selector, items) {
-    var tree_element = jQuery(tree_selector);
+var json2html = function(items, table_selector, tree_selector) {
     var table_element = jQuery(table_selector);
-
+    var tree_element = jQuery(tree_selector);
     var purge = function(string) { return string.replace(/\W+/g,'-').replace(/^\-+|\-+$/g, ''); };
     var isSimpleArray = function(obj) {
         if(!(obj instanceof Array)) return false;
